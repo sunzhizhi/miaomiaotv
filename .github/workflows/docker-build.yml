@@ -1,4 +1,4 @@
-name: Build LibreTV image
+name: Build miaomiaotv image
 
 on:
   workflow_run:
@@ -9,9 +9,9 @@ on:
 
 jobs:
   build:
-    name: Build LibreTV image
+    name: Build miaomiaotv image
     runs-on: ubuntu-latest
-    if: (github.event.workflow_run.conclusion == 'success' && github.repository == 'LibreSpark/LibreTV') || (github.repository == 'bestZwei/libretv')
+    if: (github.event.workflow_run.conclusion == 'success' && github.repository == 'sunzhizhi/miaomiaotv') || (github.repository == 'sunzhizhi/miaomiaotv')
 
     steps:
       - name: Check out repository
